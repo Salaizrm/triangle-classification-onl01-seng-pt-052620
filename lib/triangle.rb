@@ -16,8 +16,6 @@ class Triangle
     elsif x != y && x != z
       :scalene
 
-
-
     end
 
   end
