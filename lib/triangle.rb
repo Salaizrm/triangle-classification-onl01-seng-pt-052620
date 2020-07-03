@@ -11,6 +11,9 @@ class Triangle
   def kind
     if x == y && x == z
       :equilateral
+    elsif x == y || x == z || y == z
+      :isosceles
+
     end
 
   end
