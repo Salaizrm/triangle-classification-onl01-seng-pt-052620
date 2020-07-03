@@ -3,9 +3,9 @@ class Triangle
   attr_accessor :x, :y, :z
 
   def initialize(x, y, z)
-    @x = equilateral
-    @y = isosceles
-    @z = scalene
+    @x = x
+    @y = y
+    @z = z
   end
 
   def kind
