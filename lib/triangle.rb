@@ -9,6 +9,9 @@ class Triangle
   end
 
   def kind
+    if x == y && x == z
+      :equilateral
+    end
 
   end
 
