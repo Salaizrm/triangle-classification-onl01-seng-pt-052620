@@ -13,6 +13,10 @@ class Triangle
       :equilateral
     elsif x == y || x == z || y == z
       :isosceles
+    elsif x != y && x != z
+      :scalene
+
+
 
     end
 
