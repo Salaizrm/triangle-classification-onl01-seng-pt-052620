@@ -9,20 +9,17 @@ class Triangle
   end
 
   def kind
-    if x == y && x == z
-      :equilateral
-    elsif x == y || x == z || y == z
-      :isosceles
-    elsif x != y && x != z
-      :scalene
-    end
-
     if x <= 0 || y <= 0 || z <= 0
       raise TriangleError
     end
-
+    if x == y && x == z
+        :equilateral
+      elsif x == y || x == z || y == z
+        :isosceles
+      elsif x != y && x != z
+        :scalene
+      end
     end
-
   end
 
   class TriangleError < StandardError
